@@ -51,7 +51,7 @@ if(WITH_DEBUG)
     add_definitions("-DDEBUG_ENABLED=1")
 endif()
 
-set(SRCS ${CMAKE_SOURCE_DIR}/test/sensors-service-client.c)
+set(SRCS ${CMAKE_CURRENT_SOURCE_DIR}/sensors-service-client.c)
 add_executable(sensors-service-client ${SRCS})
 target_link_libraries(sensors-service-client ${LIBRARIES})
 
