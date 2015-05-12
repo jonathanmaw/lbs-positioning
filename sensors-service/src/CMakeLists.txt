@@ -54,6 +54,7 @@ if(WITH_IPHONE)
 
     add_library(sensors-service-use-iphone SHARED ${LIB_SRC_USE_IPHONE})
     target_link_libraries(sensors-service-use-iphone ${LIBRARIES})
+    install(TARGETS sensors-service-use-iphone DESTINATION lib)
 elseif(WITH_REPLAYER)
     #generate library using replayer as input
     set(LIB_SRC_USE_REPLAYER ${CMAKE_SOURCE_DIR}/src/sns-use-replayer.c 
@@ -65,6 +66,7 @@ elseif(WITH_REPLAYER)
 
     add_library(sensors-service-use-replayer SHARED ${LIB_SRC_USE_REPLAYER})
     target_link_libraries(sensors-service-use-replayer ${LIBRARIES})
+    install(TARGETS sensors-service-use-replayer DESTINATION lib)
 else()
     message(STATUS "Invalid cmake options!")
 endif()

@@ -45,6 +45,6 @@ endif()
 
 target_link_libraries(test-log-replayer ${LIBRARIES})
 
-
+install(TARGETS test-log-replayer DESTINATION bin)
 
 

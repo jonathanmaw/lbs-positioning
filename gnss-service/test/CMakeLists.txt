@@ -56,3 +56,4 @@ endif()
 
 target_link_libraries(gnss-service-client ${LIBRARIES})
 
+install(TARGETS gnss-service-client DESTINATION bin)

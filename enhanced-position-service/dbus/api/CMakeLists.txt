@@ -64,11 +64,12 @@ execute_process(
     OUTPUT_FILE positioning-constants.h
 )
 
-
-
-
-
-
+install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/genivi-positioning-enhancedposition.xml
+	${CMAKE_CURRENT_SOURCE_DIR}/genivi-positioning-positionfeedback.xml
+	${CMAKE_CURRENT_SOURCE_DIR}/genivi-positioning-configuration.xml
+	${CMAKE_CURRENT_SOURCE_DIR}/genivi-positioning-constants.xml
+	DESTINATION share/dbus-1/interfaces
+)
 
 
 

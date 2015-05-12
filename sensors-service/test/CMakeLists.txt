@@ -55,4 +55,4 @@ set(SRCS ${CMAKE_SOURCE_DIR}/test/sensors-service-client.c)
 add_executable(sensors-service-client ${SRCS})
 target_link_libraries(sensors-service-client ${LIBRARIES})
 
-
+install(TARGETS sensors-service-client DESTINATION bin)
